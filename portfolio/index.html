@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>WillColl Agency</title>
+</head>
+
+<body>
+
+  <header class="header_container">
+    <h1 class="logo">WillColl</h1>
+
+    <div class="nav_toggle" id="nav-toggle">
+      <i class="fa-solid fa-bars nav_burger"></i>
+      <i class="fa-solid fa-x  nav_close"></i>
+    </div>
+    <nav class="nav_container" id="nav-menu">
+
+      <ul class="nav_list">
+        <li><a href="#home" class="nav_link">Home</a></li>
+        <li><a href="#products" class="nav_link">Products</a></li>
+        <li><a href="#service" class="nav_link">Services</a></li>
+        <li><a href="#contact" class="nav_link">Contact Us</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+  <section id="home">
+    <div class="hero_container">
+      <div class="hero_details">
+        <h2 class="hero_title">Get the best Insurance products tailored to your needs.</h2>
+
+        <p class="hero_description">
+          Simple Steps You Can Take To Improve Your
+          Financial Well-Being For The Rest Of Your Life
+        </p>
+      </div>
+
+      <form onsubmit="sendEmail(); reset(); return false;" class="hero_form"  >
+            <h3>Get a Quote</h3>
+      <input type="text" placeholder="Name" id="name">
+      <input type="tel" placeholder="Phone" id="phone">
+      <input type="email" placeholder="Email" id="email">
+      <input type="text" list="class-list" placeholder="Insurance class" id="insurance_class">
+      <datalist id="class-list">
+        <option value="Motor Insurance">
+        <option value="Personal Accident">
+        <option value="Fire Insurance">
+      </datalist>
+      <textarea type="text" placeholder="Message" id="message"></textarea>
+
+      <button type="submit">Get Quote</button>
+    </form>
+        
+      
+    </div>
+  </section>
+
+  <main>
+    <section id="products">
+      <h2 class="section_title">Products</h2>
+
+      <div class="products_container">
+        <div class="product_icons">
+          <i class="fa-solid fa-car"></i>
+          <i class="fa-solid fa-fire"></i>
+          <i class="fa-solid fa-person-falling-burst"></i>
+        </div>
+
+        <div class="product_img">
+          <img src="./assets/car.jpg" alt="img">
+        </div>
+
+        <div class="products_description">
+          <h2 class="product_title">Motor Insurance</h2>
+           <p>
+            Make a plan for the emergence of life. We protect your most precious assets, allowing you to devote your
+            time and energy to more essential things in life.
+            Discover the most appropriate fit for you and your Family.
+          </p>
+
+        </div>
+        <div class="product_buttons">
+          <button><i class="fa-solid fa-less-than"></i></button>
+          <button><i class="fa-solid fa-greater-than"></i></button>
+        </div>
+
+
+
+      </div>
+
+    </section>
+
+    <section id="service">
+      <h2  class="section_title">Services</h2>
+      <div class="services_container">
+
+        <div class="service">
+          <img src="./assets/claims.jpg" alt="">
+          <strong>Claim Assistance</strong>
+          <p>In need of Claim assistance.Let us do the heavy lifting for you.From claim filings to all the paperwork</p>
+        </div>
+
+       
+        <div class="service">
+          <img src="./assets/policy.jpg" alt="">
+          <strong>Policy Renewals</strong>
+          <p>.Let us do the heavy lifting for you.</p>
+        </div>
+
+        <div class="service">
+          <img src="./assets/policy.jpg" alt="">
+          <strong>Insurance Solutions</strong>
+          <p>.Let us do the heavy lifting for you.</p>
+        </div>
+
+      </div>
+    </section>
+
+ 
+    <section id="contact">
+      <h2  class="section_title">Contact Us</h2>
+
+
+      <div class="contact_container">
+       
+        <div class="contact_info">
+          <h1>WillColl</h1>
+          <span>Agency</span>
+
+
+          <div class="contact_details">
+
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>10th Floor, Pension Towers,
+                Loita Street, Nairobi
+                P.O Box 24799-00502
+              </span>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <span>
+                <a href="0741775492" type="tel">0741775492</a>
+                      or 
+                <a href="0723467642" type="tel">0723467642</a>
+              </span>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <span>
+                <a href="willcoll2004@gmail.com" type="email">willcoll2004@gmail.com</a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="contact_subscribe">
+          <span><strong>Subscribe to our newsletter</strong></span>
+          <form action="">
+            <input type="text" placeholder="Enter your Email">
+            <button type="submit">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer_links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="rights">
+      <span>All rights Reserved
+        <i class="fa-regular fa-copyright"></i>
+        WillColl Agency 2024
+      </span>
+    </div>
+
+    <div class="social_links">
+      <i class="fa-brands fa-square-whatsapp"></i>
+      <i class="fa-brands fa-facebook"></i>
+    </div>
+
+
+  </footer>
+  
+  <!-- Your main JavaScript module -->
+  <script type="module" src="/main.js"></script>
+  
+  <!-- External SMTP.js script -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+      function sendEmail(){
+    Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "itscollinsmaina@gmail.com",
+      Password : "B1A28F1DE63FD6B1C10550F834B973019879",
+      To : 'itscollinsmaina@gmail.com',
+      From : document.getElementById('email').value,
+      Subject : "Qoute Leads ",
+      Body : "Name:" +  document.getElementById('name').value
+            + "Phone:" +  document.getElementById('phone').value
+            + "Email:" +  document.getElementById('email').value
+            + "Insurance Class:" +  document.getElementById('insurance_class').value
+            + "Message:" +  document.getElementById('message').value
+  }).then(
+    message => alert("Sent successfully !")
+  );
+  }
+  </script>
+
+  
+</body>
+
+</html>
